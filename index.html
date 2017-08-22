@@ -18,18 +18,18 @@
 
         // Net check
         web3.version.getNetwork((err, netId) => {
-            window.contract_address = '0x537c7b0ad61e980ed3acfbd0b83a02ea18baffa5';
+            window.contract_address = '0x537c7b0ad61e980ed3acfbd0b83a02ea18baffa5';  // testrpc
             switch (netId) {
                 case '1':
                     console.log('This is mainnet')
-                    window.contract_address = '0x510467f65a600926af2ed565419ad98cf1f706ed'  // 1th mainnet
+                    window.contract_address = '0x510467f65a600926af2ed565419ad98cf1f706ed'  // mainnet
                     break
                 case '2':
                     console.log('This is the deprecated Morden test network.')
                     break
                 case '3':
                     console.log('This is the ropsten test network.')
-                    window.contract_address = '0x3199a17d2ece0581049c71ba0d323bd23b99887e'  // 1st ropsten
+                    window.contract_address = '0xc454307a1e00baaf6968efbc30622ea317bfdf2c'  // ropsten
                     break
                 default:
                     console.log('This is an unknown network.')
